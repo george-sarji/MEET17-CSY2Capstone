@@ -1,3 +1,5 @@
+
+
 from flask import Flask, render_template, request , redirect, url_for, session
 app = Flask(__name__)
 app.secret_key="this is my project"
@@ -5,7 +7,7 @@ app.secret_key="this is my project"
 ### Add your tables here!
 # For example:
 # from database_setup import Base, Potato, Monkey
-from database_setup import 
+from database_setup import Base, Users
 
 from datetime import datetime
 

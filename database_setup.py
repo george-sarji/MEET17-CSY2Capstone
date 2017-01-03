@@ -6,5 +6,10 @@ from datetime import datetime
 
 Base = declarative_base()
 
-
-
+class Users(Base):
+    __tablename__ = 'users'
+    id=Column(Integer, primary_key=True)
+    password=Column(String)
+    email=Column(String)
+    name=Column(String)
+    dob=Column(Date)
